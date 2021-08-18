@@ -12,8 +12,7 @@ function mondayWork(hobby) {
 }
 
 function wrapAdjective() {
-    return function(adjective) {
-        const adjective = "special";
+    return function(adjective = "special") {
         return `You are ${adjective}`;
-    }
+    } 
 }

@@ -11,8 +11,10 @@ function mondayWork(hobby) {
     } else return "This Monday, I will go to the office.";
 }
 
-function wrapAdjective() {
+function wrapAdjective(character = "*") {
     return function(adjective = "special") {
-        return `You are ${adjective}`;
+        return `You are ${character}${adjective}${character}!`;
     } 
 }
+wrapAdjective("*")();
+wrapAdjective("||")();
